@@ -1,0 +1,60 @@
+.contact-name {
+    cursor: pointer;  
+    text-decoration: underline;
+}
+
+.contact-table-container {
+    width: 100%;
+    max-width: 980px;
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #B2ADB6;
+}
+
+table th {
+    height: 44px;
+    background-color: #4E0078;
+    color: white;
+    border: 1px solid #B2ADB6;
+    text-align: left;
+    padding-left: 10px;
+}
+
+table th:nth-child(1) {
+    width: 225px;
+}
+
+table th:nth-child(2) {
+    width: 225px;
+}
+
+table th:nth-child(3) {
+    width: 360px;
+}
+
+table th:nth-child(4) {
+    width: 90px;
+}
+
+table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #B2ADB6;
+    font-size: 15px;
+    padding: 0px 10px;
+}
+
+table td:first-child {
+    text-decoration: underline;
+}
+
+// Grayscale the icons
+mat-icon {
+    filter: grayscale(100%);
+}

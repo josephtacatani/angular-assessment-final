@@ -1,0 +1,26 @@
+<div class="contact-details-container">
+  <div *ngIf="contact" class="contact-details">
+      <div class="header">
+        <button mat-icon-button (click)="goBack()" class="back-button">
+          <mat-icon>arrow_back</mat-icon>
+        </button> 
+        <h2>Customer Information</h2>
+
+      </div>
+
+      <div class="contact-card">
+        <div>
+          <h3>First Name</h3>
+          <p>{{ contact.name }}</p>
+        </div>
+        <div>
+          <h3>Email Address</h3>
+          <p>{{ contact.email }}</p>
+        </div>
+        <div>
+          <h3>Contact Number</h3>
+          <p>{{ contact.contactNumber }}</p>
+        </div>
+      </div>
+  </div>
+</div>

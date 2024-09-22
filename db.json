@@ -1,0 +1,76 @@
+{
+  "contacts": [
+    {
+      "id": "de16",
+      "name": "Jason Contreras",
+      "email": "kamikazee@gmail.com",
+      "contactNumber": "09550229303"
+    },
+    {
+      "id": "147a",
+      "name": "Youshoul",
+      "email": "josephneiltacatani@gmail.com",
+      "contactNumber": "0955022930"
+    },
+    {
+      "id": "e892",
+      "name": "Snackbar877",
+      "email": "josephneiltacatani@gmail.com",
+      "contactNumber": "09550229309"
+    },
+    {
+      "id": "e052",
+      "name": "Michigan",
+      "email": "josephneiltacatani@gmail.com",
+      "contactNumber": "0955022930"
+    },
+    {
+      "id": "c042",
+      "name": "Neil Tacatani",
+      "email": "josephneiltacatani@gmail.com",
+      "contactNumber": "0955022930"
+    },
+    {
+      "id": "b9d9",
+      "name": "Neil Tacatani",
+      "email": "josephneiltacatani@gmail.com",
+      "contactNumber": "0955022930"
+    },
+    {
+      "id": "e598",
+      "name": "Neil Tacatani",
+      "email": "josephneiltacatani@gmail.com",
+      "contactNumber": "0955022930"
+    },
+    {
+      "id": "e409",
+      "name": "Swertwe",
+      "email": "josephneiltacatani@gmail.com",
+      "contactNumber": "09550229308"
+    },
+    {
+      "id": "b5d3",
+      "name": "tytty7777",
+      "email": "josephneiltacatani@gmail.com",
+      "contactNumber": "09550229307"
+    },
+    {
+      "id": "b1d8",
+      "name": "Neil Tacatani",
+      "email": "josephneiltacatani@gmail.com",
+      "contactNumber": "09550229307"
+    },
+    {
+      "id": "0690",
+      "name": "Neil Tacatani",
+      "email": "josephneiltacatani@gmail.com",
+      "contactNumber": "09550229307"
+    },
+    {
+      "id": "e01e",
+      "name": "Michal",
+      "email": "user@gmail.com",
+      "contactNumber": "09550229307"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<div class="contact-list-container">
+<div class="contact-header">
+    <div class="contact-info">
+      <h2>Contact Directory</h2>
+      <p>Your list of contacts appear here. To add a new contact, click on the<br>
+        Add New Contact button.  </p>
+    </div>
+    <div class="add-contact-button">
+      <button mat-raised-button color="primary" (click)="openContactForm()">Add New Contact</button>
+    </div>
+</div>
+  
+  <div class="view-controls">
+    <button [class.active]="isCardView" (click)="toggleView('card')">
+      <mat-icon>grid_view</mat-icon>
+    </button>
+   <button [class.active]="!isCardView" (click)="toggleView('table')">
+      <mat-icon>table_rows</mat-icon>
+    </button>
+  </div>
+  
+  <!-- Card View -->
+  <div *ngIf="isCardView">
+    <div class="card-container">
+      <div class="grid-view">
+        <app-contact-card
+          *ngFor="let contact of contacts"
+          [contact]="contact"
+          (edit)="onEditContact($event)"
+          (delete)="deleteContact($event)">
+        </app-contact-card>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Optionally, Table View if you implemented it -->
+  <div *ngIf="!isCardView">
+    <app-contact-table 
+    [contacts]="contacts"
+    (delete)="deleteContact($event)"
+    ></app-contact-table>
+  </div>
+  </div>
+  

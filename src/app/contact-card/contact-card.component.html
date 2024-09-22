@@ -1,0 +1,19 @@
+<div class="contact-card">
+    <!-- Ensure the name is clickable -->
+    <div class="contact-details">
+        <h3 class="contact-name" (click)="goToDetails(contact.id)">{{ contact.name }}</h3>
+        <p>{{ contact.email }}</p>
+        <p>{{ contact.contactNumber }}</p>
+    </div>
+  
+    <!-- Edit and Delete Buttons -->
+    <div class="contact-actions">
+      <button mat-icon-button color="primary" (click)="onEdit()">
+        <mat-icon>edit_outline</mat-icon>
+      </button>
+      
+      <button mat-icon-button color="warn" (click)="onDelete()">
+        <mat-icon>delete_outline</mat-icon>
+      </button>
+    </div>
+  </div>

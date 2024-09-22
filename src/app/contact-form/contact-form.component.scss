@@ -1,0 +1,100 @@
+.dialog-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 33px 33px 0px 33px;
+  background-color: white;
+  width: 277px;
+}
+
+::ng-deep {
+  .mdc-dialog--open .mat-mdc-dialog-surface {
+    width: auto !important;
+  }
+}
+
+form {
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-field {
+  margin-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  margin-left: auto; // Center the form field
+  margin-right: auto; // Center the form field
+}
+
+.placeholder {
+  margin-bottom: 11px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%; // Change to 100% to fill the form-field width
+  height: 45px;
+  border: 1.5px solid #dadada;
+  border-radius: 4px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+input.ng-invalid.ng-touched[formControlName="name"] {
+  border-color: red;
+}
+input.ng-invalid.ng-touched[formControlName="contactNumber"] {
+  border-color: red;
+}
+
+input.ng-invalid.ng-touched[formControlName="email"] {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 33px 33px 33px;
+}
+
+button {
+  margin: 0;
+  font-size: 17px;
+  font-weight: bold;
+  height: 45px;
+  border-radius: 30px;
+}
+
+button.cancel {
+  border: 2px solid rgb(187, 21, 255);
+  color: black;
+  width: 103px;
+  background-color: transparent;
+}
+
+button.add-new-contact {
+  width: 152px;
+  border: none;
+  background-color: #E5E5E5;
+  color: #4E4952;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  
+  &:not(:disabled) {
+    background-color: rgb(187, 21, 255);
+    color: white;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

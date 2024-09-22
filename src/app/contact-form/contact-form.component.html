@@ -1,0 +1,47 @@
+<!-- <h2>{{ isEditMode ? 'Edit Contact' : 'Add New Contact' }}</h2> -->
+
+<div class="dialog-content">
+  <form [formGroup]="contactForm">
+    
+    <!-- Name Field -->
+    <div class="form-field">
+      <label for="name" class="placeholder">Name</label>
+      <input id="name" type="text" formControlName="name">
+      <div *ngIf="contactForm.get('name')?.hasError('required') && contactForm.get('name')?.touched" class="error-message">
+        Please enter a name
+      </div>
+    </div>
+
+    <!-- Contact Number Field -->
+    <div class="form-field">
+      <label for="contactNumber" class="placeholder">Contact Number</label>
+      <input id="contactNumber" type="tel" formControlName="contactNumber" (input)="onContactNumberInput($event)" maxlength="11">
+      <div *ngIf="contactForm.get('contactNumber')?.hasError('required') && contactForm.get('contactNumber')?.touched" class="error-message">
+        Please enter a contact number
+      </div>
+      <div *ngIf="contactForm.get('contactNumber')?.hasError('pattern') && contactForm.get('contactNumber')?.touched" class="error-message">
+        Invalid contact number format (11 digits required)
+      </div>
+    </div>
+
+    <!-- Email Field -->
+    <div class="form-field">
+      <label for="email" class="placeholder">Email address</label>
+      <input id="email" type="email" formControlName="email">
+      <div *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched" class="error-message">
+        Email is required
+      </div>
+      <div *ngIf="contactForm.get('email')?.hasError('invalidEmail') && contactForm.get('email')?.touched" class="error-message">
+        Please enter a valid email address
+      </div>
+    </div>
+    
+  </form>
+</div>
+
+<div class="dialog-actions">
+  <button class="cancel" (click)="onCancel()">Cancel</button>
+  <button class="add-new-contact" (click)="onSubmit()" [disabled]="contactForm.invalid">
+    {{ isEditMode ? 'Save Changes' : 'Add Contact' }}
+  </button>
+</div>

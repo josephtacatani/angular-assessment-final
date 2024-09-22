@@ -1,0 +1,118 @@
+
+
+.contact-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  line-height: 12px;
+  letter-spacing: 0%;
+
+  .contact-info {
+    margin-top: 55px;
+    h2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    p {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 0;
+    }
+  }
+
+  .add-contact-button {
+    align-self: flex-end;
+    button {
+      width: 190px;
+      height: 40px;
+      border-radius: 75px;
+      background-color: rgb(161, 0, 255);
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+}
+
+.view-controls {
+  width: 980px;
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 44px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    mat-icon {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+    }
+
+    &:last-child mat-icon {
+      font-size: 20px; // Scaling down the 2nd icon
+    }
+
+    &.active {
+      mat-icon {
+        color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+.card-container {
+  width: 980px;
+  margin-top: 20px;
+}
+
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 310px);
+  gap: 20px;
+  justify-content: space-between;
+}
+
+::ng-deep .mat-mdc-snack-bar-label.mdc-snackbar__label {
+    background-color: #43F7CC!important;
+    padding-right: 20px!important;
+    border-radius: 7px!important;
+}
+
+::ng-deep .mat-mdc-snack-bar-container .mat-mdc-snackbar-surface {
+  min-width: 0px !important;
+}
+
+::ng-deep .mat-mdc-snackbar-surface {
+  padding-right: 0 !important;
+}
+
+::ng-deep.mdc-snackbar__surface.mat-mdc-snackbar-surface {
+    border-radius: 7px!important;
+    background: #43F7CC!important;
+}

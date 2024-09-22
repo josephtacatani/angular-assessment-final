@@ -1,0 +1,34 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;  // Make it fill the viewport
+    text-align: left;
+    width: 980px;  // Set the main container width to 980px
+    margin: 0 auto;  // Center the container horizontally
+  }
+  
+  .error-icon {
+    margin-bottom: 5px;
+    color: black;
+    align-self: flex-start;
+    transform: scale(2.5); 
+    margin-left: 15px; // Increase the size of the icon by 30%
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    align-self: flex-start;
+    height: 20px;
+  }
+  
+  p {
+    font-size: 15px;
+    color: #666;
+    font-weight: 400;  // Medium font weight
+    align-self: flex-start;
+    margin-top: 15px;
+  }

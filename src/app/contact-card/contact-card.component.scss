@@ -1,0 +1,41 @@
+.contact-name {
+    cursor: pointer;  
+}
+
+.contact-card {
+  border: 1.5px solid #CECED0;
+  padding: 10px 18px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.contact-details {
+  flex-grow: 1;
+  
+}
+
+.contact-actions {
+  display: flex;
+  align-items: flex-start;
+ 
+}
+
+.contact-name {
+  margin-bottom: 3px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+// Add this rule to change the logo color to grayscale and set icon size
+::ng-deep .mat-icon {
+  filter: grayscale(100%);
+}

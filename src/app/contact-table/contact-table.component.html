@@ -1,0 +1,30 @@
+<div class="contact-table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td class="contact-name" (click)="goToDetails(contact.id)">{{ contact.name }}</td>
+        <td>{{ contact.contactNumber }}</td>
+        <td>{{ contact.email }}</td>
+        <td>
+          <!-- Edit Button -->
+          <button mat-icon-button color="primary" (click)="onEdit(contact)">
+            <mat-icon>edit_outline</mat-icon>
+          </button>
+  
+          <!-- Delete Button -->
+          <button mat-icon-button color="warn" (click)="onDelete(contact)">
+            <mat-icon>delete_outline</mat-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
